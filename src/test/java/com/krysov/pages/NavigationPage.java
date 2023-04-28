@@ -14,6 +14,7 @@ public class NavigationPage {
             buttonPassword = $(byText("Ввести пароль")),
             buttonSubmit = $("[data-test-id='submit-button']"),
             buttonMessage = $(".compose-button__wrapper"),
+            frame = $(".ag-popup__frame__layout__iframe"),
             buttonSend = $(".vkuiButton__content");
 
     public void clickButtonEnter() {
@@ -45,9 +46,10 @@ public class NavigationPage {
             buttonSend.click();
         });
     }
+
     public void changeFrame() {
         step("Переход на новый фрейм", () -> {
-            switchTo().frame(14);
+            switchTo().frame(frame);
         });
     }
 }
