@@ -13,7 +13,7 @@ public class NavigationPage {
             buttonEnter = $("[data-testid='enter-mail-primary']"),
             buttonPassword = $(".inner-0-2-81.innerTextWrapper-0-2-82"),
             buttonSubmit = $("[data-test-id='submit-button']"),
-            buttonMessage = $(".compose-button__wrapper"),
+            buttonMessage = $(".compose-button__txt"),
             frame = $(".ag-popup__frame__layout__iframe"),
             buttonSend = $(".vkuiButton__content");
 

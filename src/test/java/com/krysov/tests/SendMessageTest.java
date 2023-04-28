@@ -1,11 +1,19 @@
 package com.krysov.tests;
 
+import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Owner;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
 public class SendMessageTest extends TestBase {
+
+    @BeforeAll
+    static void beforeAll() {
+        Configuration.holdBrowserOpen = true;
+        Configuration.browserSize = "1920x1080";
+    }
 
     @DisplayName("Проверка отправки сообщения")
     @Owner("Krysov")
