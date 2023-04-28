@@ -13,12 +13,6 @@ import static com.codeborne.selenide.Selenide.*;
 
 public class SendMessageTest extends TestBase {
 
-    @BeforeAll
-    static void beforeAll() {
-        Configuration.holdBrowserOpen = true;
-        Configuration.browserSize = "1920x1080";
-    }
-
     @DisplayName("Проверка отправки сообщения")
     @Owner("Krysov")
     @Tag("PositiveMessageTest")
