@@ -11,7 +11,7 @@ public class NavigationPage {
 
     private SelenideElement
             buttonEnter = $("[data-testid='enter-mail-primary']"),
-            buttonPassword = $(byText("Ввести пароль")),
+            buttonPassword = $(".inner-0-2-81.innerTextWrapper-0-2-82"),
             buttonSubmit = $("[data-test-id='submit-button']"),
             buttonMessage = $(".compose-button__wrapper"),
             frame = $(".ag-popup__frame__layout__iframe"),
