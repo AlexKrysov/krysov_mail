@@ -40,7 +40,7 @@ public class InputDataPage {
 
     public void inputMessage() {
         step("Ввод текста сообщения", () -> {
-            subject.setValue("Привет! Я мистер сообщение");
+            message.setValue("Привет! Я мистер сообщение");
         });
     }
 }

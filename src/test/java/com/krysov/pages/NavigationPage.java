@@ -4,6 +4,7 @@ import com.codeborne.selenide.SelenideElement;
 
 import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
+import static com.codeborne.selenide.Selenide.switchTo;
 import static io.qameta.allure.Allure.step;
 
 public class NavigationPage {
@@ -42,6 +43,11 @@ public class NavigationPage {
     public void clickButtonSend() {
         step("Клик на кнопку 'Отправить'", () -> {
             buttonSend.click();
+        });
+    }
+    public void changeFrame() {
+        step("Переход на новый фрейм", () -> {
+            switchTo().frame(14);
         });
     }
 }

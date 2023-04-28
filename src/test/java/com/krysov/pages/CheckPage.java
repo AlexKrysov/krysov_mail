@@ -12,7 +12,7 @@ public class CheckPage {
 
             message = $(".layer__link");
 
-    public void inputSubject() {
+    public void checkText() {
         step("Проверка отправки сообщения", () -> {
             message.shouldHave(text("Письмо отправлено"));
         });

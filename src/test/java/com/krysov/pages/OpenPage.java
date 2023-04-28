@@ -7,7 +7,7 @@ public class OpenPage {
 
     private final String CompanyUrl = "https://mail.ru/";
 
-    public void openPage() {
+    public void openMailPage() {
         step("Открыть страницу", () ->
                 open(CompanyUrl));
     }
